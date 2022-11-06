@@ -10,17 +10,9 @@ html {
 }
 
 body {
-    height: 100%;
-    margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(86,148,255,1) 100%, rgba(177,206,255,1) 100%);
-    min-width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    align-items:center ;
-    justify-content:center ;
 }
 
 
@@ -38,7 +30,14 @@ body {
 
 
 .sec1 {
-
+    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items:center ;
+    justify-content:center ;
+    margin-bottom: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(86,148,255,1) 100%, rgba(177,206,255,1) 100%);
     } 
 
 
