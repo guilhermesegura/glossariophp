@@ -1,36 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Titillium+Web:wght@200&display=swap');
+
+*{
+    margin: 0;
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(86,148,255,1) 100%, rgba(177,206,255,1) 100%);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items:center ;
+    justify-content:center ;
+}
+
+
+
+.divpai{
+
+    background: #3B64F5;
+    max-width: 350 px;
+    min-height: 50vh;
+    padding:2rem ;
+    box-shadow:5px 5px 15px rgba(0, 0, 0, 0.2) ;
+    border-radius: 8px;
+
+}
+
+
 .sec1 {
-  
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        align-content: center;
-        margin-top: 20%;
-        gap: 10px ;
+
     } 
 
 
-.div1{ 
+.email{ 
       margin-bottom: 1em;
-      border: 1px solid #362F18;
-    box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
+      box-shadow: 1px 1px 1px rgb(0,0,0,0.1);
+      padding: 8px 10px;
+      border-radius: 8px;
+      font-family: "poppins";  
+
 }
 
-.div2 {
+.senha {
     
         margin-bottom: 1em;
-        border: 1px solid #362F18;
-        box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
+        box-shadow: 1px 1px 1px rgb(0,0,0,0.1);
+        padding: 8px 10px;
+        border-radius: 8px;
+        font-family: "poppins";
+    
+}
+
+.butao {
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 25px;
+    width: 150px;
+    font:  arial,sans-serif;
+    text-shadow: none;
+    box-shadow:2px 3px 8px rgba(0, 0, 0, 0.1) ;
+    border-radius: 5px;
+    font-family: "poppins";
+}
+
+.butao:hover{
+    background-color: rgb(9, 31, 170);
+}
+
+
+.divbotao {
+    display: flex;
+    align-items:center ;
+    justify-content:center ;
+    margin-top: 100px;
+
+}
+
+.txtLogin{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: "poppins";
+    border-bottom: 0.4px solid #f7f7f7;
+    color: azure;
     
 }
 
 
-/** .div input[type="text"], .cinput[type="email"], .div select, .campo textarea{
-    padding: 0.2em ;
-    border: 1px solid #362F18;
-    box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
-    display: block;
 
-} 
- **/ 
- 
+
+
+
+
+
