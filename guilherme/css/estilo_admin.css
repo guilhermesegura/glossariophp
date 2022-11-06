@@ -1,0 +1,12 @@
+.item {
+    margin: 10px;
+}
+
+.pai {
+    background-color: #99beff;
+    border-radius: 25px;
+    text-align: center;
+    width: 250px;
+    margin: 20% auto;
+    padding: 25px 0px;
+}

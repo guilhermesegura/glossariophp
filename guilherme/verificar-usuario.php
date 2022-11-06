@@ -3,8 +3,6 @@
     $usu = $_POST['txUsuario'];
     $sen = $_POST['txSenha'];
 
-    echo "$sen $usu";
-
     include("conexao.php");
 
     $stmt = $pdo -> prepare("select * from tbusuario
@@ -15,7 +13,9 @@
     $count = $stmt->rowCount();
 
     if($count == 1){
-       header("Location:palavra.php");
+        session_start();
+        $_SESSION["usrname"] = $usu;
+        header("Location:verifica-permissao.php");
     }
     else if($count < 1) {
         header("Location:login.php?erro=1");

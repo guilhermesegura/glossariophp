@@ -16,6 +16,17 @@
 
 <section>
     <h1> Cadastro </h1>
+    <?php
+        session_start();
+        $perm = $_SESSION["usrname"];
+        if ($perm == "admin") {
+            echo "<a href='admin.php'><h2>Voltar</h2></a>";
+        }
+        else {
+            echo "<a href='logout.php'><h2>Sair</h2></a>";
+        }
+     
+    ?>
 </section>
 
 <section class="campos">
@@ -87,6 +98,7 @@
                 catch(PDOException $e) {
                     echo "Erro: " . $e ->getmessage();
                 }
+            
             ?> 
         </tbody>
     </table>

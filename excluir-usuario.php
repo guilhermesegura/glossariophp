@@ -1,18 +1,17 @@
 <?php
-    include("PalavraClasse.php");
     
     $id = $_GET['id'];
     
     include("conexao.php");
 
     try {
-        $stmt = $pdo->prepare("delete from tbpalavra where idPalavra='$id'");
+        $stmt = $pdo->prepare("delete from tbusuario where idusuario='$id'");
 
         $stmt ->execute();
 
         $pdo = null;
 
-        header("Location:palavra.php");
+        header("Location:usuarios.php");
 
     }
     catch (PDOException $e) {
