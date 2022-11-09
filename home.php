@@ -7,7 +7,7 @@
     <title>Home</title>
 
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 

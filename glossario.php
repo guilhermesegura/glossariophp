@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="css/header.css">
 <link rel="stylesheet" href="css/estilo_glossario">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/home.css">
 
 <div class="header">
     <ul>
