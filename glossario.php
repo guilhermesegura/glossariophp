@@ -7,7 +7,7 @@
     <title>Glossário</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/estilo_glossario.css">
-    <link rel="stylesheet" href="css/home.css">
+    
 </head>
 <body>
 
