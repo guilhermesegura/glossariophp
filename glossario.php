@@ -16,8 +16,8 @@
         <a href="home.php" class="logo">Projeto Glossário</a>
         <div class="header-right">
             <li><a href="home.php">Home</a></li>
-            <li><a href="glossario.php">Glossário</a></li>
-            <li><a class="active" href="login.php">Login</a></li>
+            <li><a class="active" href="glossario.php">Glossário</a></li>
+            <li><a href="login.php">Login</a></li>
         </div>
     </ul>
 </div>
