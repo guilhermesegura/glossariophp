@@ -17,8 +17,12 @@
         $_SESSION["usrname"] = $usu;
         header("Location:verifica-permissao.php");
     }
+    else if($usu == "" || $sen == ""){
+        header("Location:login.php?erro=2");
+    }
     else if($count < 1) {
         header("Location:login.php?erro=1");
     }
+    
 
 ?>

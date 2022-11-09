@@ -64,7 +64,8 @@
 <?php
 
     if (!empty($_GET['erro'])) {
-        echo "<script>alert('Usuário Inválido')</script>";
+        if($_GET['erro'] == 1)
+            echo "<script>alert('Usuário Inválido')</script>";
     }
 
 ?>
