@@ -1,0 +1,25 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(86,148,255,1) 100%, rgba(177,206,255,1) 100%);
+
+}
+
+.campos {
+    background-color: #99beff;
+    border-radius: 25px;
+    text-align: center;
+    width: 250px;
+    margin: 25px auto;
+    padding: 25px 0px;
+}
+
+.botao {
+    margin: 0 20px
+}

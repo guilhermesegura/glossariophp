@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.divpai {
+    background: rgb(87, 87, 115);
+    background: linear-gradient(90deg, rgba(87, 87, 115, 1) 27%, rgba(115, 115, 145, 1) 95%);
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-family: "Poppins";
+}
+
+.sec1 {
+    min-height: 81.3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+input[type=password] {
+    margin-bottom: 30px;
+}
+
+main h2 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+    font-family: "Poppins";
+}
+
+main h2::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 24px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ae60f1, #631eee);
+    font-family: "Poppins";
+}
+
+.center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #9797e8;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: #7373c2;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
