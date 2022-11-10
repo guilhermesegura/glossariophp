@@ -4,11 +4,23 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Palavra Letra </title>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/palavra_letra.css">
+
     </head>
     <body>
-        <h1><a href="glossario.php">Home</a></h1>
-        <section>
+    <div class="header">
+    <ul>
+        <a href="home.php" class="logo">Projeto Glossário</a>
+        <div class="header-right">
+            <li><a href="glossario.php">Home</a></li>
+            <li><a class="active" href="glossario.php">Glossário</a></li>
+            <li><a href="login.php">Login</a></li>
+        </div>
+    </ul>
+</div>
+        <section class="lista">
             <?php
                 include("conexao.php");
 
@@ -21,16 +33,14 @@
                 $pdo = null;
 
                 while($row = $stmt->fetch(PDO::FETCH_BOTH)) {
-                    echo"<figure>";
-                        echo"<img src='.$row[3]', alt='$row[2]' />";
-                        echo"<figcaption>";
-                            echo"<a href='detalhe.php?palavra=$row[1]&id=$row[0]&letra=$letter'> $row[1] </a>";
-                        echo"</figcaption>";
-                    echo"</figure>";
+                    echo"<a href='detalhe.php?palavra=$row[1]&id=$row[0]&letra=$letter'><p> $row[1] </p></a>";
                     echo "<br>";
                 }
             ?>
         </section>
+
+
+        <?php include("footer.php"); ?>
 
     </body>
 </html>
