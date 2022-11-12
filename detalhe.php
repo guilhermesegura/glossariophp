@@ -27,7 +27,7 @@
                     echo"<br>";
                     echo utf8_encode($row[1]);
                     echo utf8_encode($row[2]);
-                    
+                    echo utf8_encode($row[4]);
                    
                 
             }

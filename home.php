@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<div class="header">
-    <ul>
-        <a href="home.php" class="logo">Projeto Glossário</a>
-        <div class="header-right">
-            <li><a class="active" href="home.php">Home</a></li>
-            <li><a href="glossario.php">Glossário</a></li>
-            <li><a href="login.php">Login</a></li>
-        </div>
-    </ul>
-</div>
+    <?php include("header.php"); ?>
 
-<section class="total">
-    <div class="box_total">
-        <div>
-            <h1> Total de Palavras: </h1>
-        </div>
-    </div>
+    <?php
+    include("conexao.php");
 
-    <div class="box_total">
-        <div>
-            <h1> Total de Usuários: </h1>
-        </div>
-    </div>
-</section>
+    $sql = "SELECT COUNT(*) FROM tbPalavra";
+    $res = $pdo->query($sql);
+    $totalPalavras = $res->fetchColumn();
 
-<?php include("footer.php"); ?>
+    $sql2 = "SELECT COUNT(*) FROM tbUsuario";
+    $res2 = $pdo->query($sql2);
+    $totalUsuarios = $res2->fetchColumn();
+
+    ?>
+
+    <main>
+
+        <div class="container">
+            <div class="caixa">
+                <h1> Total de palavras:
+                    <?php echo "$totalPalavras"; ?>
+                </h1>
+            </div>
+
+            <div class="caixa">
+                <h1> Total de Usuários:
+                    <?php echo "$totalUsuarios"; ?>
+                </h1>
+            </div>
+        </div>
+
+
+    </main>
+
+    <?php include("footer.php"); ?>
 
 </body>
+
 </html>

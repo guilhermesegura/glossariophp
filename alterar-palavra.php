@@ -6,12 +6,13 @@
     $palavra -> palavra = $_POST["txPalavra"];
     $palavra -> descricao = $_POST["txDescricao"];
     $palavra -> imagem = $_POST["txImagem"];
+    $palavra -> link = $_POST["txLink"];
     $id = $_POST['txId'];
 
     include("conexao.php");
 
     try {
-        $stmt = $pdo->prepare("update tbPalavra set palavra = '$palavra->palavra', descricao = '$palavra->descricao', imagem = '$palavra->imagem',  where idPalavra = '$id'");
+        $stmt = $pdo->prepare("update tbPalavra set palavra = '$palavra->palavra', descricao = '$palavra->descricao', imagem = '$palavra->imagem', link = '$palavra->link' where idPalavra = '$id'");
 
         $stmt ->execute();
 
