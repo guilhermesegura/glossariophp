@@ -23,7 +23,7 @@
 
             while($row = $stmt->fetch(PDO::FETCH_BOTH)) {
                     
-                    echo "<img src='.$row[3]' />";
+                    echo "<img src='img/$row[3]' />";
                     echo"<br>";
                     echo utf8_encode($row[1]);
                     echo utf8_encode($row[2]);

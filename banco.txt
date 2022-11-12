@@ -2,18 +2,17 @@ http://localhost/phpmyadmin
 
 nome do banco: dbGlossario
 
-create table tbPalavra(
+create table tbpalavra(
     idPalavra int primary key AUTO_INCREMENT,
     palavra varchar(40),
     descricao varchar(500),
-    imagem varchar(100),
-    link varchar(100)   
+    imagem varchar(100)
 );
 
-insert into tbpalavra values(null,'USB','descr USB','caminho img','link img');
-insert into tbpalavra values(null,'Monitor','descr monitor','caminho img','link img')
-insert into tbpalavra values(null,'Mouse','descr mouse','caminho mouse','link mouse');
-insert into tbpalavra values(null,'Memoria','descr memoria','caminho memoria','link memoria');
+insert into tbpalavra values(null,'atari','o atari é um videogame','atari');
+insert into tbpalavra values(null,'Monitor','descr monitor','caminho img');
+insert into tbpalavra values(null,'Mouse','descr mouse','caminho mouse');
+insert into tbpalavra values(null,'Memoria','descr memoria','caminho memoria');
 
 create table tbUsuario (
     idUsuario int primary key AUTO_INCREMENT,
