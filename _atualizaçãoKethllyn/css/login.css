@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Titillium+Web:wght@200&display=swap');
+
+*{
+    margin: 0;
+
+}
+
+.header{
+    font-family: sans-serif;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(86,148,255,1) 100%, rgba(177,206,255,1) 100%);
+}
+
+
+
+.divpai{
+    max-height: 391px;
+    background: #3B64F5;
+    max-width: 300px;
+    padding:2rem ;
+    box-shadow:5px 5px 15px rgba(0, 0, 0, 0.2) ;
+    border-radius: 8px;
+
+}
+
+footer {
+    background-color: #1874cf;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.788);
+    font-size: 1.2rem;
+}
+
+
+.sec1 {
+    min-height: 81.3vh;
+    display: flex;
+    align-items:center ;
+    justify-content:center ;
+    margin-bottom: 0;
+    
+    } 
+
+
+.email{ 
+      margin-bottom: 1em;
+      box-shadow: 1px 1px 1px rgb(0,0,0,0.1);
+      padding: 8px 10px;
+      border-radius: 8px;
+      font-family: "poppins";  
+
+}
+
+.senha {
+    
+        margin-bottom: 1em;
+        box-shadow: 1px 1px 1px rgb(0,0,0,0.1);
+        padding: 8px 10px;
+        border-radius: 8px;
+        font-family: "poppins";
+    
+}
+
+.butao {
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 25px;
+    width: 150px;
+    font:  arial,sans-serif;
+    text-shadow: none;
+    box-shadow:2px 3px 8px rgba(0, 0, 0, 0.1) ;
+    border-radius: 5px;
+    font-family: "poppins";
+}
+
+.butao:hover{
+    background-color: rgb(9, 31, 170);
+}
+
+
+.divbotao {
+    display: flex;
+    align-items:center ;
+    justify-content:center ;
+    margin-top: 100px;
+
+}
+
+.txtLogin{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: "poppins";
+    border-bottom: 0.4px solid #f7f7f7;
+    color: azure;
+    
+}
+
+
+
+
+
+
+
+
