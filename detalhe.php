@@ -10,7 +10,7 @@
     
     <?php
         $letter = $_GET['letra'];
-        echo "<h1><a href='palavra-letra.php?letra=$letter'>Voltar</a></h1>";
+        echo "<h1><a href='palavra_letra.php?letra=$letter'>Voltar</a></h1>";
 
         $id = $_GET['id'];
     

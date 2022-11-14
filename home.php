@@ -39,7 +39,7 @@
 
             <div class="caixa">
                 <h1> Total de Usuários:
-                    <?php echo "$totalUsuarios"; ?>
+                    <?php echo $totalUsuarios - 1; ?>
                 </h1>
             </div>
         </div>

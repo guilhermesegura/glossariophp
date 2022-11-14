@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/palavra_letra.css">
 
 </head>
 
@@ -29,11 +30,7 @@
 
         while ($row = $stmt->fetch(PDO::FETCH_BOTH)) {
 
-            echo utf8_encode($row[1]);
-            echo "<img src='img/$row[3]' />";
-            echo "<br>";
-            echo utf8_encode($row[2]);
-            echo utf8_encode($row[4]);
+            echo"<a class='palavra' href='detalhe.php?palavra=$row[1]&id=$row[0]&letra=$letter'><p> $row[1] </p></a>";
         }
         ?>
     </section>
