@@ -21,13 +21,12 @@
                 $pdo = null;
 
                 while($row = $stmt->fetch(PDO::FETCH_BOTH)) {
-                    echo"<figure>";
-                        echo"<img src='.$row[3]', alt='$row[2]' />";
-                        echo"<figcaption>";
-                            echo"<a href='detalhe.php?palavra=$row[1]&id=$row[0]&letra=$letter'> $row[1] </a>";
-                        echo"</figcaption>";
-                    echo"</figure>";
-                    echo "<br>";
+                    echo "<img src='img/$row[3]' />";
+                    echo"<br>";
+                    echo utf8_encode($row[1]);
+                    echo utf8_encode($row[2]);
+                    echo utf8_encode($row[4]);
+                    echo"<a class='palavra' href='detalhe.php?palavra=$row[1]&id=$row[0]&letra=$letter'><p> $row[1] </p></a>";
                 }
             ?>
         </section>

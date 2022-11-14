@@ -29,8 +29,11 @@
         $pdo = null;
 
         while ($row = $stmt->fetch(PDO::FETCH_BOTH)) {
-
-            echo"<a class='palavra' href='detalhe.php?palavra=$row[1]&id=$row[0]&letra=$letter'><p> $row[1] </p></a>";
+            echo "<img src='./img/$row[3]' />";
+                    echo"<br>";
+                    echo utf8_encode($row[1]);
+                    echo utf8_encode($row[2]);
+                    echo utf8_encode($row[4]);
         }
         ?>
     </section>
