@@ -1,43 +1,42 @@
-<!DOCTYPE html>
-<html>
+<title>Palavras</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palavras</title>
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/estilo_glossario.css">
 
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/palavra_letra.css">
+<?php include("header.php"); ?>
 
-</head>
+<section class="palavra_letra">
 
-<body>
-    <?php include("header.php"); ?>
+    <?php
 
-    <section class="lista">
-        <?php
-        include("conexao.php");
+    include("conexao.php");
 
-        $letter = $_GET['letra'];
+    $letter = $_GET['letra'];
 
-        $stmt = $pdo->prepare("select * from tbPalavra where palavra like '$letter%'");
+    $stmt = $pdo->prepare("select * from tbPalavra where palavra like '$letter%'");
 
-        $stmt->execute();
+    $stmt->execute();
 
-        $pdo = null;
+    // while ($row = $stmt->fetch(PDO::FETCH_BOTH)) {
+    //     echo "<img src='./img/$row[3]' />";
+    //     echo ($row[1]);
+    //     echo ($row[2]);
+    //     echo ($row[4]);
+    // }
 
-        while ($row = $stmt->fetch(PDO::FETCH_BOTH)) {
-            echo "<img src='./img/$row[3]' />";
-                    echo"<br>";
-                    echo utf8_encode($row[1]);
-                    echo utf8_encode($row[2]);
-                    echo utf8_encode($row[4]);
-        }
-        ?>
-    </section>
+    while ($row = $stmt->fetch(PDO::FETCH_BOTH)) {
 
-</body>
+        echo  "<div class='palavras-card'> " . "
+                <div><img src='./img/$row[3]' /></div>" . " 
+                    <div class='conteudo-card'>
+                        <h2> " . $row[1] . "</h2>" . "
+                        <p> " . $row[2] . "</p>" . "
+                        <a href='$row[4]' target='blank'>Saiba Mais</a>
+                    </div>
+                </div>";
+    }
 
-</html>
+    ?>
+
+</section>

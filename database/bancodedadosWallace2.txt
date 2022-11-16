@@ -1,0 +1,40 @@
+/*Padrão:	insert into tbpalavra values(null,'','','',''); */
+
+
+/*A*/
+
+insert into tbpalavra values(null,'atari','Atari, Inc. foi uma empresa de produtos eletrônicos, e uma das principais responsáveis pela popularização dos vídeo games. Foi fundada em 27 de junho de 1972 por Nolan Bushnell e Ted Dabney e no mesmo ano começou a produzir em massa máquinas que reproduziam o jogo Pong.','atari','https://pt.wikipedia.org/wiki/Atari');
+insert into tbpalavra values(null,'Acessibilidade','Acessibilidade é um conceito previsto na legislação brasileira como uma condição para todas as pessoas, inclusive com deficiência (PcD) possam utilizar espaços, dispositivos e serviços com segurança e autonomia. Produtos digitais também se enquadram aqui e devem ser criados considerando deficiências visuais, auditivas, motoras e cognitivas.','acessibilidade','https://pt.wikipedia.org/wiki/Acessibilidade_web');
+insert into tbpalavra values(null,'Api','API vem da sigla em inglês "Application Programming Interface" e se refere ao conjunto de rotinas de programação, comandos, funções, protocolos e objetos que funcionam como conectores de sistemas, softwares e aplicativos.','api','https://pt.wikipedia.org/wiki/Interface_de_programa%C3%A7%C3%A3o_de_aplica%C3%A7%C3%B5es');
+
+/*B*/
+
+insert into tbpalavra values(null,'Back-End','O desenvolvimento back-end está relacionado à programação e processamento de dados do que está por trás da interface das aplicações, sistemas ou produtos digitais.','back','https://pt.wikipedia.org/wiki/Front-end_e_back-end');
+insert into tbpalavra values(null,'Big Data','Se refere ao grande volume de dados, estruturados ou não, que podem ser utilizados por instituições para a geração de produtos, estratégias e pesquisas.  Área do conhecimento que estuda como tratar, analisar e obter informações a partir de conjuntos de dados grandes demais para serem analisados por sistemas tradicionais','big','https://pt.wikipedia.org/wiki/Big_data');
+insert into tbpalavra values(null,'Boilerplate','Boilerplate é o termo utilizado para se referir a um trecho de código que pode ser incluído repetidas vezes com pouca ou nenhuma alteração. Geralmente, este código boilerplate não tem função nenhuma relacionada ao negócio ou ao problema que se deseja resolver.','boilerplate','https://pt.wikipedia.org/wiki/Boilerplate_code');
+
+/*C*/
+
+insert into tbpalavra values(null,'Cache','É uma memória curta, mas bem rápida. Em outras palavras, é um espaço de armazenamento destinado a armazenar informações que são utilizadas com maior frequência. É usual que alguns sites utilizem navegadores para guardar dados em cache','cache','https://pt.wikipedia.org/wiki/Cache');
+insert into tbpalavra values(null,'CRUD','É o acrônimo para Create (criar), Read (ler), Update (atualizar) e Delete (apagar). CRUD tipicamente refere-se a operações perfomadas em um banco de dados ou base de dados, mas também pode aplicar-se para funções de alto nível de uma aplicação, como exclusões reversíveis, onde a informação não é realmente deletada, mas é marcada como deletada via status.','crud','https://pt.wikipedia.org/wiki/CRUD');
+insert into tbpalavra values(null,'CSS','Cascading Style Sheets ou Folhas de Estilo em Cascataé uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou em XML. O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.','css','https://pt.wikipedia.org/wiki/CSS3');
+
+/*D*/
+
+insert into tbpalavra values(null,'Debugar',' Procurar por erros presentes no código, além de analisar as entradas e saídas.','debugar','https://pt.wikipedia.org/wiki/Debug_(comando)');
+insert into tbpalavra values(null,'Dev','Abreviação da palavra em inglês developer, destinada a desenvolvedor ou programador.','dev','https://pt.wikipedia.org/wiki/DeveloperWorks');
+insert into tbpalavra values(null,'Diretório','É uma estrutura usada para organizar arquivos no computador, também é conhecida como pasta.','diretorio','https://pt.wikipedia.org/wiki/Diret%C3%B3rio_(computa%C3%A7%C3%A3o)');
+
+/*E*/
+
+insert into tbpalavra values(null,'ERP','Significa “Enterprise Resource Planning”, ou sistema de gestão integrado. Essa tecnologia auxilia o gestor da empresa a melhorar os processos internos e integrar as atividades de diferentes setores, como vendas, finanças, estoque e recursos humanos.','erp','https://pt.wikipedia.org/wiki/Sistema_integrado_de_gest%C3%A3o_empresarial');
+insert into tbpalavra values(null,'Ethical Hacking','Significa Hacking Ético é uma referência às funções exercidas por profissionais especialistas em cibersegurança, mas que atuam de forma ofensiva em busca de falhas no sistema.','etc','https://pt.wikipedia.org/wiki/%C3%89tica_hacker');
+insert into tbpalavra values(null,'Estagiário','Estagiário é um estudante que passa a trabalhar em uma empresa para começar a desenvolver atividades relacionadas à sua área de formação. O estagiário tem responsabilidades e carga horária definidas em um termo de compromisso assinado entre ele, empresa e instituição de ensino.','estagiario','https://pt.wikipedia.org/wiki/Est%C3%A1gio_profissional');
+
+/*F*/
+insert into tbpalavra values(null,'Framework','Trata-se de uma estrutura base, que funciona como uma espécie de plataforma de desenvolvimento, onde há ferramentas, guias, sistemas e componentes que são capazes de agilizar todo o processo de desenvolvimento de soluções, ajudando os especialistas a realizar seus trabalhos.','framework','https://pt.wikipedia.org/wiki/Framework');
+insert into tbpalavra values(null,'Front-end:','Desenvolvedor que trabalha na parte de aplicação onde o usuário interage diretamente, está relacionado a parte visual de um site ou aplicativo.','front','https://pt.wikipedia.org/wiki/Front-end_e_back-end');
+insert into tbpalavra values(null,'Full Stack','Desenvolvedor que possui conhecimento relacionados a back-end e front-end. E m outras palavras, domina diversas tecnologias e ferramentas e desenvolve sistemas, websites e aplicativo.','full','https://pt.wikipedia.org/wiki/Conjunto_de_solu%C3%A7%C3%B5es_(computa%C3%A7%C3%A3o)');
+
+
+
