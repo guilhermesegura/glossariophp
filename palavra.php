@@ -16,7 +16,7 @@
 
 <body>
 
-    <section>
+    <section class="cabecalho">
         <h1>Cadastro</h1>
 
     <?php
@@ -86,8 +86,8 @@
                 while ($row = $stmt->fetch(PDO::FETCH_BOTH)) {
                     echo "<tr>";
                     echo "<th scope=\"row\"> $row[idPalavra] </th>";
-                    echo "<td> " . utf8_encode($row[1]) . " </td>";
-                    echo "<td>" . utf8_encode($row[2]) . " </td>";
+                    echo "<td> " . $row[1] . " </td>";
+                    echo "<td>" . $row[2] . " </td>";
                     echo "<td>" . utf8_encode($row[3]) . " </td>";
                     echo "<td>" . utf8_encode($row[4]) . " </td>";
                     echo "<td><a href='?id=$row[idPalavra]&palavra=$row[1]&desc=$row[2]&img=$row[3]&link=$row[4]'> Editar </a> </td>";

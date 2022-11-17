@@ -30,9 +30,9 @@
         echo  "<div class='palavras-card'> " . "
                 <div><img src='./img/$row[3]' /></div>" . " 
                     <div class='conteudo-card'>
-                        <h2> " . $row[1] . "</h2>" . "
-                        <p> " . $row[2] . "</p>" . "
-                        <a href='$row[4]' target='blank'>Saiba Mais</a>
+                        <h2 class='conteudo'> " . $row[1] . "</h2>" . "
+                        <p class='conteudo'> " . $row[2] . "</p>" . "
+                        <div class='link'><a class='conteudo' href='$row[4]' target='blank'>Saiba Mais</a></div>
                     </div>
                 </div>";
     }
@@ -40,3 +40,14 @@
     ?>
 
 </section>
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".palavras-card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.4,
+        
+    });
+</script>

@@ -23,3 +23,16 @@ body {
 .botao {
     margin: 0 20px
 }
+
+a {
+    display: block;
+    width: fit-content; 
+}
+
+h2 {
+    width: fit-content;
+}
+
+.cabecalho {
+    margin: 10px;
+}

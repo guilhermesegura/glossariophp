@@ -13,11 +13,13 @@
 </head>
 
 <body>
-    <?php
-    session_start();
+    <section class="cabecalho">
+        <?php
+            session_start();
 
-    echo "<a href='admin.php'><h2>Voltar</h2></a>";
-    ?>
+            echo "<a href='admin.php'><h2>Voltar</h2></a>";
+        ?>
+    </section>
 
     <section class="campos">
         <form method="post" action="inserir-usuario.php">

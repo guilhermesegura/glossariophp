@@ -10,8 +10,7 @@ create table tbPalavra(
     link varchar(100)   
 );
 
-insert into tbpalavra values(null,'USB','descr USB','caminho img','link img');
-insert into tbpalavra values(null,'Monitor','descr monitor','caminho img','link img');
+
 
 create table tbUsuario (
     idUsuario int primary key AUTO_INCREMENT,
