@@ -5,9 +5,9 @@ nome do banco: dbGlossario
 create table tbPalavra(
     idPalavra int primary key AUTO_INCREMENT,
     palavra varchar(40),
-    descricao varchar(500),
+    descricao varchar(1000),
     imagem varchar(100),
-    link varchar(100)   
+    link varchar(200)   
 );
 
 
