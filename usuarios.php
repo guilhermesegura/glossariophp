@@ -6,19 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="./css/usuario.css" rel="stylesheet">
+    <link href="./css/estilo_usuario.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/home.css" rel="stylesheet">
 
     <title>Usuários</title>
 </head>
 
 <body>
-    <section class="cabecalho">
-        <?php
-            session_start();
 
-            echo "<a href='admin.php'><h2>Voltar</h2></a>";
-        ?>
-    </section>
+<header>
+    <nav>
+        <a class="logo">Cadastro</a>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+            
+        <?php
+                    session_start();
+                    $perm = $_SESSION["usrname"];
+                    if ($perm == "admin") {
+                        echo "<li><a href='admin.php'>Voltar</a></li>";
+                    } else {
+                        echo "<li><a href='logout.php'>Sair</a></li>";
+                    }
+                ?>
+        </ul>
+    </nav>
+</header>
+<script src="mobile-navbar.js"></script>
 
     <section class="campos">
         <form method="post" action="inserir-usuario.php">
@@ -37,6 +56,7 @@
 
 
             <section>
+                
                 <table class="table table-borderless">
                     <thead>
                         <tr>
@@ -50,6 +70,7 @@
 
 
                         <?php
+                        
 
 
 include("conexao.php");
