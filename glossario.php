@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/estilo_glossario.css">
 
+    <style>
+        footer {
+            position: relative;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -73,6 +79,7 @@
             <a href="palavra_letra.php?letra=Z"> Z </a>
 
         </section>
+        <?php include("footer.php")?>
     </main>
 </body>
 

@@ -38,7 +38,7 @@
     }
 
     ?>
-
+    <?php include("footer.php")?>
 </section>
 
 <script type="text/javascript" src="vanilla-tilt.js"></script>
