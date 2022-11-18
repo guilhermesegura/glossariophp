@@ -21,7 +21,7 @@ session_start();
             </div>
 
             <div class="item">
-                <a href="palavra.php?">Gerenciar Palavras</a>
+                <a href="palavra.php">Gerenciar Palavras</a>
             </div>
 
             <div class="item">
@@ -30,5 +30,6 @@ session_start();
             </div>
         </div>
     </main>
-
+<!--<button type="submit" onclick="window.location.href='logout.php'"> Sair </button>-->
 </body>
+
