@@ -1,5 +1,6 @@
 *{
     font-family: Verdana;
+    color: #fff;
 }
 section.glossario {
     max-width: 80%;
@@ -44,7 +45,7 @@ div.palavras-card {
     max-width: 25%;
     max-height:auto;
     padding: 20px 10px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -57,6 +58,7 @@ div.palavras-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+   
 }
 
 img {
