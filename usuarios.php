@@ -54,10 +54,11 @@
             </div>
 
 
-
-            <section>
+            <section class= "campos">
+            <div class="container">
                 
-                <table class="table table-borderless">
+
+                <table>
                     <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -83,8 +84,8 @@ try {
     while ($row = $stmt->fetch(PDO::FETCH_BOTH)) {
         echo "<tr scope=\"row\">";
         echo "<th> $row[0] </th>";
-        echo "<td> " . utf8_encode($row[1]) . " </td>";
-        echo "<td> " . utf8_encode($row[2]) . " </td>";
+        echo "<td>  $row[1]   </td>";
+        echo "<td>  $row[2]  </td>";
         echo "<td><a href='excluir-usuario.php?id=$row[0]'> Excluir </a></td>";
         echo "</tr>";
     }
@@ -97,7 +98,8 @@ try {
                     </tbody>
                 </table>
 
-            </section>
+            </div>
+    </section>
 
 
 </body>

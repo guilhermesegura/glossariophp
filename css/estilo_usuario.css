@@ -18,14 +18,16 @@ body {
 
 .campos {
     text-align: center;
-    width: 250px;
+    width: 500px;
     margin: 25px auto;
     padding: 25px 0px;
     background: rgb(87, 87, 115);
-    background: linear-gradient(90deg, rgba(87, 87, 115, 1) 27%, rgba(115, 115, 145, 1) 95%);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(90deg, rgba(87, 87, 115, 1) 27%, rgba(115, 115, 145, 1) 95%);   
     border-radius: 8px;
     font-family: "Poppins";
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
 }
 
 .botao {
@@ -41,12 +43,49 @@ body {
 
 input[type="text"] {
     
-    margin: 3px 0px 3px 0px;
+    margin: 2px 0px 2px 0px;
     text-align: center;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 12px;
     box-sizing: border-box;
+    margin-top: 10px;
 }
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+
+  }
+
+  table th{
+
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    padding: 0px 5px 0px 0px;
+    
+    
+}
+
+table thead{ 
+    font-family:'Courier New', Courier, monospace;
+
+    color: #fff;
+    font-size:20px;
+   
+}
+
+
+table tbody td {
+    padding: 15px 12px;
+    color: #fff;
+    font-size: 15px;
+}
+
+
 
 
