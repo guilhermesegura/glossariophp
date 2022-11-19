@@ -10,6 +10,7 @@
             <li><a class="active" href="home.php">Home</a></li>
             <li><a href="glossario.php">Glossário</a></li>
             <li><a href="login.php">Login</a></li>
+            <li><a href="sobrenos.php">Sobre</a></li>
         </ul>
     </nav>
 </header>
